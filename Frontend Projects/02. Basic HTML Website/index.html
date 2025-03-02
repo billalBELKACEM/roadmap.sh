@@ -8,35 +8,118 @@
     <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh">
     <meta name="author" content="Billal">
    <title>Basic HTML Website</title>
+   <style>
+    body {
+        border: 1px solid #333;
+    }
+    .navbar {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo a{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+    li a {
+        font-size: 15px;
+        margin-right: 10px;
+        padding: 0 10px;
+    }
+    li:not(:last-child)::after {
+        content: "/";
+    }
+    main {
+        display: flex;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+    }
+    section {
+        flex: 1;
+    }
+    section:not(:last-child) {
+        border-right: 1px solid #333;
+    }
+   </style>
    <!--  -->
 </head>
 <body>
     <header>
-
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="log"><a href="#page">Your Name</a></div>
+                <ul>
+                    <li><a href="#page-home">Home</a></li>
+                    <li><a href="#page-projects">Projects</a></li>
+                    <li><a href="#page-articles">Articles</a></li>
+                    <li><a href="#page-contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Frontend Developer</h1>
+        <p>html Only with propre layout, with styling</p>
     </header>
     <main>
-        <section>
-            <div class="">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
+        <section class="sect-one">
+            <div class="div-one">
+                <h3>Projects</h3>
+                <p>HTML Only Portfolio</p>
             </div>
-            <div class="">
-
+            <div class="div-two">
+                <p>Calculator</p>
             </div>
-            <div class="">
-                
+            <div class="div-three">
+                <p>Quiz app</p>
             </div>
-        </section1>
-        <section>
-
+            <div class="div-foor">
+                <p>CountDown Time</p>
+            </div>
+            <div class="div-five">
+                <p>Product Upcoming Page</p>
+            </div>
         </section>
-        <section>
-
+        <section class="sect-two">
+            <div class="div-one">
+                <h3>Work Experience</h3>
+                <p>roadmap.sh</p>
+                <p>Solved all the frontend Projects</p>
+                <a href="#">Visit my Profile</a>
+            </div>
+            <div class="div-two">
+                <h5>OnpenSource Work</h5>
+                <p>Contributed to 50 opensource projects. Made my own projects with 200 Github Stars.</p>
+                <a href="##">Visit my GitHub Profile</a>
+            </div>
+        </section>
+        <section class="three">
+            <h3>Education</h3>
+            <p>Graduated with 3.76 out of 4 CGPA. Won acme Hackathon. Organized 30 sessions.</p>
+            <br>
+            <p>Courses I took:</p>
+            <ul>
+                <li>Data Structures and Algorithmes</li>
+                <li>Object Oriented Programming</li>
+                <li>Web Engineering</li>
+                <li>Artificial Inteligence</li>
+                <li>Human Cumputer Interaction</li>
+                <li>Cumputer Graphic</li>
+                <li>DataBase Management Systems</li>
+                <li>Distributed DataBase Systems</li>
+                <li>Discreet Mathematics</li>
+                <li>UI/UX Designs</li>
+            </ul>
         </section>
     </main>
     <footer>
-
+        <h3>Reviews from my Teachers</h3>
     </footer>
 </body>
 </html>
