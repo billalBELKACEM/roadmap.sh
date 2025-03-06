@@ -48,6 +48,17 @@
     section:not(:last-child) {
         border-right: 1px solid #333;
     }
+    footer {
+      padding: 20px;
+    }
+    footer section {
+        display: flex;
+    }
+    .box-review {
+        flex: 1;
+        border: 1px solid #333;
+        justify-content: space-between;
+    }
    </style>
    <!--  -->
 </head>
@@ -120,6 +131,34 @@
     </main>
     <footer>
         <h3>Reviews from my Teachers</h3>
+        <section>
+        <div class="review-box">
+            <div class="review-text">
+                <p>John doe was a brilliant student; always stood out with his assignments.</p>
+            </div>
+            <div class="teacher">
+                <p class="teacher-name">Jane Doe</p>
+                <p class="teacher-job">Assistant Professor</p>
+            </div>
+        </div>
+        <div class="review-box">
+            <div class="review-text">
+                <p>John doe was a brilliant student; always stood out with his assignments.</p>
+            </div>
+            <div class="teacher">
+                <p class="teacher-name">Jane Doe</p>
+                <p class="teacher-job">Assistant Professor</p>
+            </div>
+        </div>
+        <div class="review-box">
+            <div class="review-text">
+                <p>John doe was a brilliant student; always stood out with his assignments.</p>
+            </div>
+            <div class="teacher">
+                <p class="teacher-name">Jane Doe</p>
+                <p class="teacher-job">Assistant Professor</p>
+            </div>
+        </div></section>
     </footer>
 </body>
 </html>
